@@ -54,6 +54,7 @@ p {
     text-align: center;
     font-family: pixelfont;
     font-size: 50px;
+    margin-top: 5%;
 }
 
 .divider2 {
@@ -61,11 +62,18 @@ p {
         text-align: center;
         font-family: fancyfont;
         font-size: 50px;
+        margin-top: 2%;
+}
+
+.music-divider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .moon {
     position: absolute;
-    margin-top: 60%;
+    margin-top: 59%;
     margin-left: 12.5%;
 }
 
@@ -246,13 +254,44 @@ nav {
     margin-left: 4%;
 }
 
-.sidefooter-p:hover {
-    width: 60%;
-    cursor: pointer;
+.sidefooter-p {
+    background-image: linear-gradient(to right,
+         hotpink,
+         blue 50%,
+         blue 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
     background-clip: border-box;
-    background: -webkit-linear-gradient(hotpink, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidefooter-p:before {
+    content: '';
+    background-image: linear-gradient(to right,
+                blue,
+                hotpink 50%,
+                hotpink 50%);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidefooter-p:hover {
+    background-position: 0;
+    cursor: pointer;
+}
+
+.sidefooter-p:hover::before {
+    width: 100%;
 }
 
 footer {
