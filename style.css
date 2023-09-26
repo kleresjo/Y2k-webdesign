@@ -112,9 +112,14 @@ header {
 .title {
     text-align: left;
     font-family: titlefont;
+    text-decoration: none;
+    color: var(--main-accent-color);
+    font-size: 40px;
+    margin-top: 10px;
 }
 
 .title-p {
+    color: var(--main-accent-color);
     font-family: pixelfont;
     font-size: 40px;
 }
