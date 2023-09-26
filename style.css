@@ -63,7 +63,23 @@ p {
         font-size: 50px;
 }
 
+.moon {
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 12.5%;
+}
+
+.fa-moon {
+    font-size: 100px;
+}
+
 .sailormoon {
+    width: 600px;
+    border: dotted var(--main-border-color) 5px;
+}
+
+.sailormoon2 {
+
     width: 600px;
     border: dotted var(--main-border-color) 5px;
 }
@@ -129,7 +145,6 @@ nav {
     margin-top: 2%;
     padding-bottom: 2%;
     width: 60%;
-    height: 100%;
     border: solid var(--main-border-color) 2px;
     background-color: var(--main-content-bg-color);
 }
@@ -189,6 +204,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5%;
 }
 
 .sidefooter {
@@ -230,6 +246,15 @@ nav {
     margin-left: 4%;
 }
 
+.sidefooter-p:hover {
+    width: 60%;
+    cursor: pointer;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(hotpink, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -251,4 +276,31 @@ footer {
     font-family: pfont;
     font-size: 10px;
     text-decoration: none;
+}
+
+
+/* GAME PAGE STYLING */
+
+canvas {
+    border: var(--main-border-color) solid 2px;
+    margin-top: -7%;
+}
+
+.game-div {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.game-title {
+    font-family: glockenfont;
+    text-align: center;
+    color: var(--main-accent-color);
+    font-size: 44px;
+    margin-top: 5%;
+}
+
+.game-p {
+    text-align: center;
+    font-size: 12px;
 }
